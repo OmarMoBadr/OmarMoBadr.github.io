@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-78PVBC65RS"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-78PVBC65RS');
+        </script>
+        
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+        <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.webp' | relative_url }}"/>
+        <title>Omar Badr | Personal Website</title>
+    </head>
+    <body>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="https://github.com/OmarMoBadr" class="nav_logo">OmarMoBadr</a>
+                </div>
+                
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+                        <li class="nav_item"><a href="/about" class="nav_link">About</a></li>
+                        <li class="nav_item"><a href="/projects" class="nav_link">Projects</a></li>
+                        <li class="nav_item"><a href="/blog" class="nav_link">Blog</a></li>
+                        <li class="nav_item"><a href="/contact" class="nav_link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav_toggle" id="nav-toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </nav>
+        </header>
+        
+        <main>{{content}}</main>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script src="{{ '/assets/js/menu.js' | relative_url }}"></script>
+        <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+</html>
