@@ -152,6 +152,10 @@ a {
   color:black;
 }
 
+.description{
+  margin-top: 1rem;
+}
+
 .post_card{
   -webkit-box-shadow: 4px 4px 7px -1px #00000086;
   box-shadow: 4px 4px 7px -1px #00000086;
@@ -287,8 +291,6 @@ a {
 }
 
 .home_information {
-  padding-left: 1.5rem;
-  border-left: 5px solid var(--white-color);
   z-index: var(--z-tooltip);
 }
 
@@ -318,7 +320,6 @@ a {
 
 .home_img {
   position: absolute;
-  right: 0;
   bottom: -12%;
   width: 300px;
   z-index: -100;
@@ -391,7 +392,6 @@ a {
   }
   .home_img {
     width: 600px;
-    left: 55%;
     bottom:-26%;
   }
 }
