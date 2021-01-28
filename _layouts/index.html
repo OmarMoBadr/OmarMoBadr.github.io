@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="overlay first"></div>
+<div class="overlay second"></div>
+<div class="overlay third"></div>
+
+<div class="l-main bd-grid">
+    <div class="home">
+        <div class="home_information">
+            <span class="home_pressent anime-text">{{ page.welcome }}</span>
+            <h1 class="home_title anime-text">{{ page.showname }}</h1>
+            <span class="home_skill anime-text">{{ page.job }}</span>
+
+            <div>
+                <a href="#" class="home_button anime-text">{{ page.storybutton }}</a>
+            </div>
+        </div>
+
+        <div class="home_img">
+            <img src="{{ 'assets/img/img.webp' | relative_url }}" class="landing_img">
+        </div>
+
+        <div class="home_social">
+            <a href="https://facebook.com/OmarMoBadr" target="_blank">
+                <ion-icon name="logo-facebook" class="home_social-icon"></ion-icon>
+            </a>
+            <a href="https://twitter.com/OmarMoBadr" target="_blank">
+                <ion-icon name="logo-twitter" class="home_social-icon"></ion-icon>
+            </a>
+            <a href="https://instagram.com/OmarMoBadr" target="_blank">
+                <ion-icon name="logo-instagram" class="home_social-icon"></ion-icon>
+            </a>
+            <a href="https://github.com/OmarMoBadr" target="_blank">
+                <ion-icon name="logo-github" class="home_social-icon"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
