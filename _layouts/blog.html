@@ -7,10 +7,8 @@ layout: default
     {% for post in posts %}
     <a href="{{ post.url }}">
         <div class="post_card">
-            <div class="container">
                 <h4>{{ post.title }}</h4>
                 <p>{{ post.excerpt }}</p>
-            </div>
         </div>
     </a>
     {% endfor %}
