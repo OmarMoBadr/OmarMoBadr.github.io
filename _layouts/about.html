@@ -2,10 +2,14 @@
 layout: default
 ---
 
-<center>
-        <div class="background">
+<div class="glass_container">
+    <section class="glass">
+        <center>
             <img src="{{ 'assets/img/me.webp' | relative_url }}" alt="me" class="picture">
-            <h3 style="margin:0;">{{ page.main }}</h2>
-            <div class="description">{{ page.description }}</div>
-            </div>
-</center>
+            <h3 style="margin:0;">{{ page.main }}</h3>
+            <p>{{ page.description }}</p>
+        </center>
+    </section>
+</div>
+<div class="circle1"></div>
+<div class="circle2"></div>

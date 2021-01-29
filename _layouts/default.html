@@ -14,10 +14,12 @@
 
     <meta charset="UTF-8">
 
-    {% if page.lang == "ar" %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    {% if page.lang == "ar" %}
     <style>
-        :root {--body-font: 'Tajawal', sans-serif;}
         body {direction: rtl;}
         .home_information {
             padding-right: 1.5rem;
@@ -33,9 +35,7 @@
         }
         </style>
     {% else %}
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {--body-font: 'Poppins', sans-serif;}
         body {direction: ltr;}
         .home_information {
             padding-left: 1.5rem;
@@ -52,7 +52,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.webp' | relative_url }}" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
 
 
     {% if page.lang == "en" %}
