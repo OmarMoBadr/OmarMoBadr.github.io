@@ -3,18 +3,15 @@ layout: default
 ---
 
 <div class="glass_container">
-    <section class="glass">
-        {% assign posts=site.posts | where:"lang", page.lang %}
-        {% for post in posts %}
+    {% assign posts=site.posts | where:"lang", page.lang %}
+    {% for post in posts %}
+    <a href="{{ post.url }}">
         <div class="post_card">
-            <img src="{{post.image}}" alt="" style="width:100%">
             <div class="container">
-                <h4><a href="{{ post.url }}" class="link">{{ post.title }}</a></h4>
+                <h4>{{ post.title }}</h4>
                 <p>{{ post.excerpt }}</p>
             </div>
         </div>
-        {% endfor %}
-    </section>
+    </a>
+    {% endfor %}
 </div>
-<div class="circle1"></div>
-<div class="circle2"></div>
