@@ -8,5 +8,5 @@ title: Omar Badr | Personal Website
 welcome: Hello, My name is
 showname: Omar Badr
 job: Software Developer
-storybutton: Coming Soon
+button: See my Projects
 ---

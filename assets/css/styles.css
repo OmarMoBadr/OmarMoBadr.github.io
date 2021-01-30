@@ -47,8 +47,18 @@ body {
     margin: 3rem 0 0 0;
     font-family: var(--body-font);
     color: var(--white-color);
-    font-weight: 700;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 h1,
 h2 {
@@ -113,9 +123,9 @@ a {
 .picture {
     width: 25%;
     height: 25%;
-    border-radius: 50%;
-    -webkit-box-shadow: 4px 4px 7px -1px #00000086;
-    box-shadow: 4px 4px 7px -1px #00000086;
+    border-radius: 10%;
+    -webkit-box-shadow: 4px 4px 7px -1px #0000001d;
+    box-shadow: 4px 4px 7px -1px #0000001d;
 }
 
 .post {
@@ -156,27 +166,40 @@ a {
     color: black;
 }
 
+.glass_container {
+    font-family: var(--body-font);
+    min-height: 100vh;
+    background: linear-gradient(to right top, #5a6d6f, #3b403f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    padding:20px 0px;
+}
+
 .projects{
+    margin:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tt{
+    margin-top:50px;
 }
 
 .project_card {
     background-color:rgba(255, 255, 255, 0.353);
     position: relative;
-	max-width: 400px;
+	max-width: 350px;
     color: rgba(28,26,23,0.8);
 	font-size: 18px;
 	line-height: 170%;
     border-radius: 16px;
-    margin:auto;
-    margin-top:50px;
-    margin-bottom:10px;
+    margin:30px;
 	transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, top 0.15s ease-in-out;
     top: 0px;
     text-align: center;
-}
-
-.project_card:first-of-type{
-    margin-top:60px;
 }
 
 .project_card:hover {
@@ -188,7 +211,7 @@ a {
 .project_card img{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    max-width:400px;
+    max-width:inherit;
     height: auto;
 }
 
@@ -237,29 +260,28 @@ a {
     cursor: pointer;
 }
 
-.glass_container {
-    font-family: var(--body-font);
-    min-height: 100vh;
-    background: linear-gradient(to right top, #5a6d6f, #3b403f);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h1{
+    font-size:60px;
+    font-weight:700;
 }
 
 .glass {
     background: white;
-    min-height: 80vh;
+    min-height: 50vh;
     width: 60%;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.53), rgba(255, 255, 255, 0.143));
     border-radius: 2rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
     padding: 25px 50px;
-    margin-top: 75px;
     color: white;
     font-size: 25px;
     font-weight: 200;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+.blog{
+    display: block;
 }
 
 .circle1,
@@ -282,10 +304,6 @@ a {
     left: 10%;
 }
 
-form {
-    margin-top: 40px;
-}
-
 form input,
 textarea,
 button {
@@ -301,6 +319,7 @@ button {
     display: block;
 }
 
+button{cursor: pointer;}
 form textarea {
     height: 230px;
 }
@@ -342,7 +361,7 @@ footer{
     .glass {
         min-height: 80vh;
         width: 95%;
-        margin-bottom: 10px;
+        margin: 25px 0;
         padding: 10px;
     }
     .post_card{

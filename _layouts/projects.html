@@ -3,50 +3,18 @@ layout: default
 ---
 
 <div class="glass_container">
-    <div class="projects">
-        {% assign projects=site.pages | where:"lang", page.lang | where:"category", "projects" %}
-        {% for project in projects %}
-        <a href="{{ project.url }}">
-            <div class="project_card">
-                <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
-                <h4>{{ project.title }}</h4>
-            </div>
-        </a>
-
-        <a href="{{ project.url }}">
-            <div class="project_card">
-                <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
-                <h4>{{ project.title }}</h4>
-            </div>
-        </a>
-
-        <a href="{{ project.url }}">
-            <div class="project_card">
-                <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
-                <h4>{{ project.title }}</h4>
-            </div>
-        </a>
-
-        <a href="{{ project.url }}">
-            <div class="project_card">
-                <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
-                <h4>{{ project.title }}</h4>
-            </div>
-        </a>
-
-        <a href="{{ project.url }}">
-            <div class="project_card">
-                <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
-                <h4>{{ project.title }}</h4>
-            </div>
-        </a>
-
-        <a href="{{ project.url }}">
-            <div class="project_card">
-                <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
-                <h4>{{ project.title }}</h4>
-            </div>
-        </a>
-        {% endfor %}
+    <div class="tt">
+        <h1>{{page.title}}</h1>
+        <div class="projects">
+            {% assign projects=site.pages | where:"lang", page.lang | where:"category", "projects" %}
+            {% for project in projects %}
+            <a href="{{ project.url }}">
+                <div class="project_card">
+                    <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
+                    <h4>{{ project.title }}</h4>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
     </div>
 </div>

@@ -7,4 +7,5 @@ first: "Your email: "
 second: "Your message: "
 third: "Send"
 fourth: "Subject: "
+title: Contact
 ---

@@ -8,5 +8,5 @@ title: عمر بدر | الموقع الشخصي
 welcome: مرحبا, اسمي
 showname: عمر بدر
 job: مطور برمجيات
-storybutton: قريبا
+button: انظر إلى أعمالي
 ---
