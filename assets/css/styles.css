@@ -41,9 +41,9 @@ html {
 }
 
 body {
-    background-image: url("../img/bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color:black;
     margin: 3rem 0 0 0;
     font-family: var(--body-font);
     color: var(--white-color);
@@ -170,6 +170,18 @@ a {
     font-family: var(--body-font);
     min-height: 100vh;
     background: linear-gradient(to right top, #5a6d6f, #3b403f);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    text-align:center;
+    padding:20px 0px;
+}
+
+.glass_container_flex {
+    font-family: var(--body-font);
+    min-height: 100vh;
+    background: linear-gradient(to right top, #5a6d6f, #3b403f);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,10 +194,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.tt{
-    margin-top:50px;
 }
 
 .project_card {
@@ -220,27 +228,48 @@ a {
     padding:10px;
 }
 
+.post_content {
+    background-color:rgba(255, 255, 255, 0.353);
+    position: relative;
+	max-width: 900px;
+    color: rgba(28,26,23,0.8);
+    margin: auto;
+    margin-top:30px;
+	font-size: 20px;
+	line-height: 170%;
+	border-radius: 16px;
+	padding: 10px;
+    top: 0px;
+}
+
 .post_card {
     background-color:rgba(255, 255, 255, 0.353);
     position: relative;
 	max-width: 750px;
     color: rgba(28,26,23,0.8);
 	margin: auto;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 170%;
 	border-radius: 16px;
 	padding: 0px 20px 10px 20px;
 	margin-top: 60px;
 	transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, top 0.15s ease-in-out;
-	top: 0px;
+    top: 0px;
+    text-align: center;
 }
+
 .post_card:first-of-type{
     margin-top:0;
 }
 .post_card h4{
-    padding-top:10px; 
-    font-size:25px;
-    text-align: center;
+    padding-top:10px;
+    margin:0; 
+    font-size:30px;
+}
+
+.post_card h6{
+    margin:0;
+    font-size:12px;
 }
 
 .post_card:hover {
@@ -263,6 +292,12 @@ a {
 h1{
     font-size:60px;
     font-weight:700;
+    color:white;
+}
+
+h2{
+    font-size:30px;
+    color:white;
 }
 
 .glass {
@@ -277,11 +312,14 @@ h1{
     color: white;
     font-size: 25px;
     font-weight: 200;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
-.blog{
-    display: block;
+.container{
+    margin-top:80px;
+}
+.container h1{
+    margin-bottom:20px;
 }
 
 .circle1,
@@ -350,6 +388,9 @@ footer{
         border-radius: 0 0 1rem 1rem;
         -webkit-transition: .5s;
         transition: .5s;
+    }
+    .post_content{
+        max-width: 95%;
     }
     form input,
     textarea {

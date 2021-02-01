@@ -20,30 +20,46 @@
 
     {% if page.lang == "ar" %}
     <style>
-        body {direction: rtl;}
+        body {
+            direction: rtl;
+        }
+
         .home_information {
             padding-right: 1.5rem;
             border-right: 5px solid var(--white-color);
         }
-        .home_img{
-            left:0;
+
+        .home_img {
+            left: 0;
             -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
         }
+
         @media screen and (min-width: 768px) {
-            .home_img{right:55%;}
+            .home_img {
+                right: 55%;
+            }
         }
-        </style>
+    </style>
     {% else %}
     <style>
-        body {direction: ltr;}
+        body {
+            direction: ltr;
+        }
+
         .home_information {
             padding-left: 1.5rem;
             border-left: 5px solid var(--white-color);
         }
-        .home_img{right:0;}
+
+        .home_img {
+            right: 0;
+        }
+
         @media screen and (min-width: 768px) {
-            .home_img{left:55%;}
+            .home_img {
+                left: 55%;
+            }
         }
     </style>
     {% endif %}
@@ -52,20 +68,24 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.webp' | relative_url }}" />
 
-
-
-    {% if page.lang == "en" %}
-    <title>Omar Badr | Personal Website</title>
+    {% if page.name == "index.md" %}
+    <title>{{ page.title }}</title>
     {% else %}
-    <title>عمر بدر | الموقع الشخصي</title>
-    {% endif%}
+    {% if page.lang == "en" %}
+    <title>{{ page.title }} | Omar Badr</title>
+    {% else %}
+    <title>{{ page.title }} | عمر بدر</title>
+    {% endif %}
+    {% endif %}
 </head>
 
 {% if page.name == "index.md" %}
-<body style="overflow: hidden;">
-{% else %}
-<body>
-{% endif %}
+
+<body style="overflow: hidden;" background="{{'/assets/img/bg.webp'| relative_url }}">
+    {% else %}
+
+    <body>
+        {% endif %}
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>

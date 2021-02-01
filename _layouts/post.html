@@ -3,12 +3,10 @@ layout: default
 ---
 
 <div class="glass_container">
-    <a href="{{ post.url }}">
-        <div class="post_card">
-            <div class="container">
-                <h4>{{ page.title }}</h4>
-                <p>{{content}}</p>
-            </div>
+    <div class="container">
+        <h2>{{ page.title }}</h2>
+        <div class="post_content">
+            <p>{{content}}</p>
         </div>
-    </a>
+    </div>
 </div>
