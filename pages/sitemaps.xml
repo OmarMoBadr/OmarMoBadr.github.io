@@ -6,10 +6,10 @@ permalink: /sitemaps.xml
   {% for post in site.posts %}
     {% if post.id contains "404" %}{% else %}
       <url>
-        <loc>https://OmarMoBadr.github.io/{{ post.url }}</loc>
+        <loc>https://OmarMoBadr.github.io{{ post.url }}</loc>
         {% assign versions=site.posts | where:"ref", post.ref %}
         {% for version in versions %}
-          <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="https://OmarMoBadr.github.io/{{ version.url }}" />
+          <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="https://OmarMoBadr.github.io{{ version.url }}" />
         {% endfor %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
@@ -19,10 +19,10 @@ permalink: /sitemaps.xml
   {% for page in site.pages %}
     {% if page.id contains "404" %}{% else %}
       <url>
-        <loc>https://OmarMoBadr.github.io/{{ page.url }}</loc>
+        <loc>https://OmarMoBadr.github.io{{ page.url }}</loc>
         {% assign versions=site.pages | where:"ref", page.ref %}
         {% for version in versions %}
-          <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="https://OmarMoBadr.github.io/{{ version.url }}" />
+          <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="https://OmarMoBadr.github.io{{ version.url }}" />
         {% endfor %}
         <changefreq>weekly</changefreq>
       </url>
