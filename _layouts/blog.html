@@ -14,14 +14,6 @@ layout: default
                 <p>{{ post.excerpt }}</p>
             </div>
         </a>
-
-        <a href="{{ post.url }}">
-            <div class="post_card">
-                <h4>{{ post.title }}</h4>
-                <div dir="ltr"> <h6>{{ post.date | date_to_string }}</h6></div>
-                <p>{{ post.excerpt }}</p>
-            </div>
-        </a>
         {% endfor %}
     </div>
 </div>

@@ -5,8 +5,9 @@ layout: default
 <div class="glass_container">
     <div class="container">
         <h2>{{ page.title }}</h2>
+        <div dir="ltr"> <h6>{{ page.date | date_to_string }}</h6></div>
         <div class="post_content">
-            <p>{{content}}</p>
+            {{content}}
         </div>
     </div>
 </div>
