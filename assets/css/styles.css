@@ -1,6 +1,6 @@
 :root {
     --body-font: 'poppins', 'Tajawal', sans-serif;
-    --first-color: #1E2831;
+    --first-color: #6c643c;
     --black-color: #000;
     --white-color: #FFF;
 }
@@ -342,7 +342,7 @@ h6{
 .home_social-icon {
     margin-bottom: 2rem;
     font-size: 3rem;
-    color: var(--black-color);
+    color: white;
     cursor: pointer;
 }
 
