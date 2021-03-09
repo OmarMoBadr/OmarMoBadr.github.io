@@ -1,6 +1,6 @@
 :root {
     --body-font: 'poppins', 'Tajawal', sans-serif;
-    --first-color: #6c643c;
+    --first-color: #82B4C1/*#6c643c*/;
     --black-color: #000;
     --white-color: #FFF;
 }
@@ -37,13 +37,13 @@
 }
 
 html {
-    min-height: 100%;
+    height: 100%;
 }
 
 body {
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:#3b403f;
+    background-color:black/*#3b403f*/;
     margin: 3rem 0 0 0;
     font-family: var(--body-font);
     color: var(--white-color);
@@ -342,7 +342,7 @@ h6{
 .home_social-icon {
     margin-bottom: 2rem;
     font-size: 3rem;
-    color: white;
+    color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
 }
 
@@ -668,7 +668,7 @@ footer{
         margin-bottom: 0;
     }
     .home_img {
-        width: 600px;
+        width: 40vw;
         bottom: -26%;
     }
 }
