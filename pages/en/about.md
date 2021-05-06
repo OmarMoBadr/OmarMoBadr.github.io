@@ -6,5 +6,6 @@ lang: en
 title: About
 
 main: Omar Badr
-description: I am a 17 years old Software Developer, I mainly develop video games in <b>Unity</b> Game Engine and also I make other things like <b>Desktop Applications</b>, <b>Automating Bots</b> and <b>Web Applications</b>.
+description: I'm a Self-Taught software developer I have experience working in ["Python","C#","C++","JavaScript","GML"]. I like to develop systems for video games because I think that developing games is the most interesting thing about software engineering. Also, I do work on making other projects like Web and Desktop Apps and Automation scripts.
+I would like to share in this Blog some tips about Productivity and Programming that I collected along the way in my journey of learning how to code.
 ---
