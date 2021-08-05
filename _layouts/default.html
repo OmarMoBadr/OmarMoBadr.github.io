@@ -101,6 +101,7 @@
                 {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
                 {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
 
+
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list">
                         {% if page.lang == "en" %}
@@ -119,17 +120,17 @@
 
                         {% if page.path contains '_posts' %}
                         {% if page.lang == "en" %}
-                        <li class="nav_item"><a href="{{ posts[0].url }}" class="nav_link">العربية</a></li>
+                        <li class="nav_item"><a href="{{ posts[0].url }}" onclick="setCookie('lang','ar',365)" class="nav_link">العربية</a></li>
                         {% else %}
-                        <li class="nav_item"><a href="{{ posts[1].url }}" class="nav_link">English</a></li>
+                        <li class="nav_item"><a href="{{ posts[1].url }}" onclick="setCookie('lang','en',365)" class="nav_link">English</a></li>
                         {% endif %}
 
                         {% else %}
 
                         {% if page.lang == "en" %}
-                        <li class="nav_item"><a href="{{ pages[0].url }}" class="nav_link">العربية</a></li>
+                        <li class="nav_item"><a href="{{ pages[0].url }}" onclick="setCookie('lang','ar',365)" class="nav_link">العربية</a></li>
                         {% else %}
-                        <li class="nav_item"><a href="{{ pages[1].url }}" class="nav_link">English</a></li>
+                        <li class="nav_item"><a href="{{ pages[1].url }}" onclick="setCookie('lang','en',365)" class="nav_link">English</a></li>
                         {% endif %}
                         {% endif %}
 
@@ -152,5 +153,25 @@
         <script src="{{ 'assets/js/animation.js' | relative_url }}"></script>
         {% endif %}
     </body>
+
+    <script>
+        {% if page.lang == 'en' %}
+            if(getCookie("lang") == "ar"){
+                {% if page.path contains '_posts' %}
+                    window.location.replace("{{ posts[0].url }}")
+                {% else %}
+                    window.location.replace("{{ pages[0].url }}")
+                {% endif %}
+            }
+        {% else %}
+            if(getCookie("lang") == "en"){
+                {% if page.path contains '_posts' %}
+                    window.location.replace("{{ posts[1].url }}")
+                {% else %}
+                    window.location.replace("{{ pages[1].url }}")
+                {% endif %}
+            }
+        {% endif %}
+    </script>
 
 </html>
