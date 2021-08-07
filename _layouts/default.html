@@ -172,6 +172,16 @@
                 {% endif %}
             }
         {% endif %}
+
+        var imgs = document.getElementsByTagName("img");
+        
+        for(var i=0; i<imgs.length; i++) {
+            p = imgs[i].parentElement;
+
+            if (p.nodeName == "P"){
+                p.style = "text-align: center;";
+            }
+        };
     </script>
 
 </html>
