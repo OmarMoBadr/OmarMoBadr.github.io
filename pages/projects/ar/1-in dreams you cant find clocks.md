@@ -5,7 +5,7 @@ lang: ar
 permalink: /ar/project/in-dreams-you-cant-find-clocks
 ref: in-dreams
 category: projects
-image: "/assets/projects/in-dreams-you-cant-find-clocks.png"
+image: "/assets/projects/in_dreams_you_cant_find_clocks.png"
 ---
 
 اللعبة التي شاركت بها في LDjam47 تحت موضوع "عالق في حلقة".
@@ -13,9 +13,9 @@ image: "/assets/projects/in-dreams-you-cant-find-clocks.png"
 الوصف:
 اللعبة عبارة عن قصة قصيرة بمنظور الشخص الأول حول العلوق في الأحلام, هدفك أن تجد طرقًا لتوقظ نفسك بها.
 
-لم تؤدي اللعبة بشكل جيد لكنني سعيد بالنتائج.
+لم تؤد اللعبة بشكل جيد لكنني سعيد بالنتائج.
 
-![the results](/assets/projects/ld47-results.png)
+![the results](/assets/projects/ld47_results.png)
 
 المنصات المدعومة:
 - Html5 (سطح المكتب فقط)

@@ -5,7 +5,7 @@ lang: en
 permalink: /en/project/in-dreams-you-cant-find-clocks
 ref: in-dreams
 category: projects
-image: "/assets/projects/in-dreams-you-cant-find-clocks.png"
+image: "/assets/projects/in_dreams_you_cant_find_clocks.png"
 ---
 
 This is my entry for LDjam 47 theme is "Stuck In a Loop".
