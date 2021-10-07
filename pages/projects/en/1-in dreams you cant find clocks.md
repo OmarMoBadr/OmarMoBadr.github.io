@@ -15,7 +15,7 @@ The game is a short story game with first person camera about stucking in dreams
 
 it didn't do very well but I'm happy with the results.
 
-![the results](/assets/projects/ld47-results.png)
+![the results](/assets/projects/ld47_results.png)
 
 supported platforms:
 - Html5 (Descktop only)

@@ -32,4 +32,4 @@ image: "/assets/projects/run_dear_cover.png"
 مصدر اللعبة متوفر: [هنا](https://github.com/OmarMoBadr/Run-my-Dear-LD49)
 
 لتجربة اللعبة:
-<iframe frameborder="0" src="https://itch.io/embed/1220583?border_width=5&amp;bg_color=ffffff&amp;fg_color=000000&amp;link_color=743f39&amp;border_color=c69f7e" width="560" height="175"><a href="https://omarmobadr.itch.io/run-my-dear">Run my Dear by Omar Badr</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/1220583?border_width=5&amp;bg_color=ffffff&amp;fg_color=000000&amp;link_color=743f39&amp;border_color=c69f7e" width="60%" height="165"><a href="https://omarmobadr.itch.io/run-my-dear">Run my Dear by Omar Badr</a></iframe>

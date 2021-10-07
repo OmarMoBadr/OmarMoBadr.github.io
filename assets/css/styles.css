@@ -359,6 +359,11 @@ h2{
     color:white;
 }
 
+.normal-size{
+        font-size:30px;
+        color:white;
+}
+
 .glass {
     background: white;
     min-height: 50vh;
