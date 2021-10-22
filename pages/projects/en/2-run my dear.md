@@ -26,6 +26,12 @@ The game was made in 48 hours using Python with the module Pygame and my small e
 you have to match your speed to treadmill's speed using **Space Bar** but if you slipped you will have another chance to get high score by dodging clouds in sky using **WASD**
 
 
+## results
+
+![results](/assets/projects/ld49_results.png)
+
+my entry this time did better than the last one although the game didn't come out as I planned because I wasn't able to utilize all my time during the jam, after all it was a great experience as always.
+
 ## Download
 ludum dare page: [here](https://ldjam.com/events/ludum-dare/49/run-my-dear)  
 
