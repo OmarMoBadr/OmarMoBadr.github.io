@@ -5,7 +5,7 @@ lang: ar
 permalink: /ar/project/slimeyverse
 ref: slimeyverse
 category: projects
-image: "/assets/projects/slimeyverse/banner.jpeg"
+image: "/assets/projects/slimeyverse/banner.jpg"
 ---
 
 لعبة قصيرة صنعت خلال **Global Game Jam 2022** كان الموضوع: **إزدواجية**
