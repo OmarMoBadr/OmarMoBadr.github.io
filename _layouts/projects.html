@@ -1,20 +1,56 @@
 ---
 layout: default
 ---
+{% assign games=site.pages | where:"lang", page.lang | where:"category", "projects" |  where: "type", "Game" | where: "archived", 0%}
+{% assign other=site.pages | where:"lang", page.lang | where:"category", "projects" |  where: "type", "Other" | where: "archived", 0%}
+{% assign archived=site.pages | where:"lang", page.lang | where:"category", "projects" | where: "archived", 1 %}
 
 <div class="glass_container">
     <div class="container">
+
         <h1>{{page.title}}</h1>
         <div class="projects">
-            {% assign projects=site.pages | where:"lang", page.lang | where:"category", "projects" %}
-            {% for project in projects reversed %}
-            <a href="{{ project.url }}">
-                <div class="project_card">
-                    <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
-                    <h5>{{ project.title }}</h5>
+            {% for project in games reversed %}
+            <div class="project_card" onclick="location.href='{{project.url}}';">
+                <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
+                <h5>{{ project.title }}</h5>
+
+                {% if project.tags.size > 0 %}
+                <div class="tags">
+                    {% for tag in project.tags %}
+                    {% capture tag_name %}{{ tag }}{% endcapture %}
+                    <span class="tag">{{ tag_name }}</span>
+                    {% endfor %}
+                    <span class="tag">{{ project.type }}</span>
+                    <span class="tag">{{ project.year }}</span>
                 </div>
-            </a>
+                {% endif %}
+            </div>
             {% endfor %}
         </div>
+        
+        {% if archived.size > 0 %}
+        <hr>
+        <h1>{{page.archive}}</h1>
+        <div class="projects">
+            {% for project in archived reversed %}
+            <div class="project_card" onclick="location.href='{{project.url}}';">
+                <img src="{{ project.image | relative_url}}" alt="{{ project.title }} Image">
+                <h5>{{ project.title }}</h5>
+
+                {% if project.tags.size > 0 %}
+                <div class="tags">
+                    {% for tag in project.tags %}
+                    {% capture tag_name %}{{ tag }}{% endcapture %}
+                    <span class="tag">{{ tag_name }}</span>
+                    {% endfor %}
+                    <span class="tag">{{ project.type }}</span>
+                    <span class="tag">{{ project.year }}</span>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {%endif%}
     </div>
 </div>

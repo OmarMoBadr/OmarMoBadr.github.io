@@ -5,6 +5,10 @@ lang: ar
 permalink: /ar/project/slimeyverse
 ref: slimeyverse
 category: projects
+tags: ["GGJ", "Unity"]
+year: 2022
+type: Game
+archived: 0
 image: "/assets/projects/slimeyverse/banner.jpg"
 ---
 

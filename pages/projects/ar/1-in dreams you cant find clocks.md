@@ -5,7 +5,11 @@ lang: ar
 permalink: /ar/project/in-dreams-you-cant-find-clocks
 ref: in-dreams
 category: projects
-image: "/assets/projects/in_dreams_you_cant_find_clocks.png"
+tags: ["Ludum Dare", "Unity"]
+year: 2020
+type: Game
+archived: 0
+image: "/assets/projects/dreams/cover.png"
 ---
 
 اللعبة التي شاركت بها في LDjam47 تحت موضوع "عالق في حلقة".
@@ -15,7 +19,7 @@ image: "/assets/projects/in_dreams_you_cant_find_clocks.png"
 
 لم تؤد اللعبة بشكل جيد لكنني سعيد بالنتائج.
 
-![the results](/assets/projects/ld47_results.png)
+![the results](/assets/projects/dreams/results.png)
 
 المنصات المدعومة:
 - Html5 (سطح المكتب فقط)

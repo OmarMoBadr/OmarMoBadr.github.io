@@ -5,12 +5,16 @@ lang: ar
 permalink: /ar/project/run-my-dear
 ref: dear
 category: projects
-image: "/assets/projects/run_dear_cover.png"
+tags: ["Ludum Dare", "Pygame"] 
+year: 2021
+type: Game
+archived: 0
+image: "/assets/projects/dear/cover.png"
 ---
 لعبة صغيرة فيها تلعب بغزال يتمرن على جهاز مشي غير مستقر تتغير سرعته بشكل غير متوقع
  صنعت للمشاركة في ludum dare 49 وكان موضوع المسابقة (غير مستقر)
 
-![gameplay](/assets/projects/run_dear_gameplay.gif)
+![gameplay](/assets/projects/dear/gameplay lowres.gif)
 
 الأدوات المستخدمة:
 - Pygame
@@ -22,16 +26,16 @@ image: "/assets/projects/run_dear_cover.png"
 
 ## طريقة اللعب
 
-![instructions](/assets/projects/run_dear_instructions.png)
+![instructions](/assets/projects/dear/instructions.png)
 
 عليك محاذاة سرعتك مع سرعة جهاز المشي باستخدام **المسافة** ولكن إذا سقطت يوجد لك فرصة أخرى للحصول على نقاط أعلى عن طريق مرواغة السحب باستخدام **WASD**
 
 
 ## النتيجة
 
-![results](/assets/projects/ld49_results.png)
+![results](/assets/projects/dear/results.png)
 
-نتائج مشاركتي هذه المرة كانت أفضل بكثير من المرة السابقة على الرغم من أن اللعبة لم تخرج بالشكل الذي خططته لأنني لم أتمكن من استغلال وقت المسابقة بشكل كامل.
+نتائج مشاركتي هذه المرة كانت أفضل بكثير من المرة السابقة على الرغم من أن اللعبة لم تخرج بالشكل الذي خططته لعدم تمكني من استغلال وقت المسابقة بشكل كامل.
 
 
 ## التحميل

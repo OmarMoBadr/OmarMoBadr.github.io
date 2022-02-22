@@ -3,13 +3,14 @@ layout: default
 ---
 
 <div class="glass_container_flex">
-    <section class="glass">
-        <center>
+    <section class="about_container">
             <img src="{{ 'assets/img/me.webp' | relative_url }}" alt="me" class="picture">
             <h3 style="margin:0;">{{ page.main }}</h3>
-            <p>{{ page.description }}</p>
-        </center>
+            <p >{{ page.description }}</p>
+            <div class="skills">
+                {{content}}
+            </div>
     </section>
 </div>
-<div class="circle1"></div>
-<div class="circle2"></div>
+<!-- <div class="circle1"></div>
+<div class="circle2"></div> -->

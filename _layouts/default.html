@@ -105,32 +105,36 @@
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list">
                         {% if page.lang == "en" %}
-                        <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
-                        <li class="nav_item"><a href="/{{page.lang}}/about" class="nav_link">About</a></li>
-                        <li class="nav_item"><a href="/{{page.lang}}/projects" class="nav_link">Projects</a></li>
-                        <li class="nav_item"><a href="/{{page.lang}}/blog" class="nav_link">Blog</a></li>
-                        <li class="nav_item"><a href="/{{page.lang}}/contact" class="nav_link">Contact</a></li>
+                        <li class="nav_item"><a href="/" onclick="setCookie('lang','en',365)" class="nav_link">Home</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/about" onclick="setCookie('lang','en',365)" class="nav_link">About</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/projects" onclick="setCookie('lang','en',365)" class="nav_link">Projects</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/blog" onclick="setCookie('lang','en',365)" class="nav_link">Blog</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/contact" onclick="setCookie('lang','en',365)" class="nav_link">Contact</a></li>
                         {% else %}
-                        <li class="nav_item"><a href="/{{page.lang}}/home" class="nav_link">الرئيسية</a></li>
-                        <li class="nav_item"><a href="/{{page.lang}}/about" class="nav_link">حول</a></li>
-                        <li class="nav_item"><a href="/{{page.lang}}/projects" class="nav_link">المشاريع</a></li>
-                        <li class="nav_item"><a href="/{{page.lang}}/blog" class="nav_link">المدونة</a></li>
-                        <li class="nav_item"><a href="/{{page.lang}}/contact" class="nav_link">التواصل</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/home" onclick="setCookie('lang','ar',365)" class="nav_link">الرئيسية</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/about" onclick="setCookie('lang','ar',365)" class="nav_link">حول</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/projects" onclick="setCookie('lang','ar',365)" class="nav_link">المشاريع</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/blog" onclick="setCookie('lang','ar',365)" class="nav_link">المدونة</a></li>
+                        <li class="nav_item"><a href="/{{page.lang}}/contact" onclick="setCookie('lang','ar',365)" class="nav_link">التواصل</a></li>
                         {% endif%}
 
                         {% if page.path contains '_posts' %}
+                        {% if posts.size > 1 %}
                         {% if page.lang == "en" %}
                         <li class="nav_item"><a href="{{ posts[0].url }}" onclick="setCookie('lang','ar',365)" class="nav_link">العربية</a></li>
                         {% else %}
                         <li class="nav_item"><a href="{{ posts[1].url }}" onclick="setCookie('lang','en',365)" class="nav_link">English</a></li>
                         {% endif %}
+                        {% endif %}
 
                         {% else %}
 
+                        {% if pages.size > 1 %}
                         {% if page.lang == "en" %}
                         <li class="nav_item"><a href="{{ pages[0].url }}" onclick="setCookie('lang','ar',365)" class="nav_link">العربية</a></li>
                         {% else %}
                         <li class="nav_item"><a href="{{ pages[1].url }}" onclick="setCookie('lang','en',365)" class="nav_link">English</a></li>
+                        {% endif %}
                         {% endif %}
                         {% endif %}
 
@@ -158,17 +162,25 @@
         {% if page.lang == 'en' %}
             if(getCookie("lang") == "ar"){
                 {% if page.path contains '_posts' %}
-                    window.location.replace("{{ posts[0].url }}")
+                    {% if posts.size > 1 %}
+                        window.location.replace("{{ posts[0].url }}")
+                    {% endif %}
                 {% else %}
-                    window.location.replace("{{ pages[0].url }}")
+                    {% if pages.size > 1 %}
+                        window.location.replace("{{ pages[0].url }}")
+                    {% endif %}
                 {% endif %}
             }
         {% else %}
             if(getCookie("lang") == "en"){
                 {% if page.path contains '_posts' %}
-                    window.location.replace("{{ posts[1].url }}")
+                    {% if posts.size > 1 %}
+                        window.location.replace("{{ posts[1].url }}")
+                    {% endif %}
                 {% else %}
-                    window.location.replace("{{ pages[1].url }}")
+                    {% if pages.size > 1 %}
+                        window.location.replace("{{ pages[1].url }}")
+                    {% endif %}
                 {% endif %}
             }
         {% endif %}

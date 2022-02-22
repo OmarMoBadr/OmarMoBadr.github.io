@@ -5,7 +5,11 @@ lang: en
 permalink: /en/project/in-dreams-you-cant-find-clocks
 ref: in-dreams
 category: projects
-image: "/assets/projects/in_dreams_you_cant_find_clocks.png"
+tags: ["Ludum Dare", "Unity"]
+year: 2020
+type: Game
+archived: 0
+image: "/assets/projects/dreams/cover.png"
 ---
 
 This is my entry for LDjam 47 theme is "Stuck In a Loop".
@@ -15,7 +19,7 @@ The game is a short story game with first person camera about stucking in dreams
 
 it didn't do very well but I'm happy with the results.
 
-![the results](/assets/projects/ld47_results.png)
+![the results](/assets/projects/dreams/results.png)
 
 supported platforms:
 - Html5 (Descktop only)
