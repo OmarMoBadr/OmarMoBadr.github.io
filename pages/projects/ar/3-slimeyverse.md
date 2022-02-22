@@ -40,4 +40,4 @@ image: "/assets/projects/slimeyverse/banner.jpg"
 <br>
 
 ## إلعب الاصدار الحالي:
-<iframe frameborder="0" src="https://itch.io/embed/1374213?bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636" width="552" height="167"><a href="https://omarmobadr.itch.io/slimeyverse">Slimeyverse by Omar Badr</a></iframe>
+<iframe frameborder="0" src="https://itch.io/embed/1374213?bg_color=222222&amp;fg_color=eeeeee&amp;border_color=363636" width="60%" height="165"><a href="https://omarmobadr.itch.io/slimeyverse">Slimeyverse by Omar Badr</a></iframe>
