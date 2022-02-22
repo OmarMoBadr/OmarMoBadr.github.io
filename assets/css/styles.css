@@ -381,7 +381,8 @@ h4{
 .home_social-icon {
     margin-bottom: 2rem;
     font-size: 3rem;
-    color: rgba(0, 0, 0, 0.85);
+    color:white;
+    /* color: rgba(0, 0, 0, 0.85); */
     cursor: pointer;
 }
 
