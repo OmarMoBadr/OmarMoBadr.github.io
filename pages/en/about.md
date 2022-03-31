@@ -46,5 +46,4 @@ description: I'm a self-taught Indie game developer
 - French: basic
 
 #### Other Skills:
-- Typing Speed: 80WPM
 - Self Learning
