@@ -10,6 +10,7 @@ description: I'm a self-taught Indie game developer
 ---
 
 #### GameDev Technologies:
+
 - Unity
 - Pygame
 - GameMaker
@@ -17,6 +18,7 @@ description: I'm a self-taught Indie game developer
 - SDL
 
 #### Web and other Technologies
+
 - Flask
 - Flutter
 - React
@@ -27,6 +29,7 @@ description: I'm a self-taught Indie game developer
 - Git
 
 #### Porgramming Languages:
+
 - C#
 - Python
 - C/C++
@@ -35,15 +38,20 @@ description: I'm a self-taught Indie game developer
 - HTML/CSS (if that counts)
 
 #### Experience:
+
 - Indie Game Development
 - Full Stack Web Development
 - Automation Scripting
 
 #### Languages:
+
 - Arabic: native
 - English: conversational
 - Spanish: basic
 - French: basic
 
 #### Other Skills:
+
 - Self Learning
+- Competitive Programming
+- Chess
